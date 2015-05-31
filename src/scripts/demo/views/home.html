@@ -1,0 +1,19 @@
+<fa-md-app height="{{faMdHeight}}" width="{{faMdWidth}}">
+  <fa-md-sidenav nav-width="300" nav-height="{{faMdHeight}}" status="faMdSidenavOpen" sidenav-md="false" position="left" control="mainCtrl.sidenavControl">
+    <fa-surface class="full-height" fa-background-color="'red'">{{'height: ' + faMdSidenavCtrl.height}}
+    <p>
+      <md-button aria-label="close" ng-click="mainCtrl.test()">close</md-button>
+    </p>
+    <p>
+      <pre>{{testToggle}}</pre>
+    </p>
+    </fa-surface>
+  </fa-md-sidenav>
+    <fa-md-surface width="{{faMdWidth /2}}"><h1>test</h1>
+        <p><pre>width:{{faMdWidth}}</pre></p>
+        <button type="button" name="button" ng-click="mainCtrl.test()">toggle</button>
+        <md-button aria-label="toggle" ng-click="mainCtrl.sidenavControl.toggle()">toggle</md-button>
+        <p><pre>height:{{faMdHeight}}</pre></p>
+        <p><pre>surfaceWidth:{{sidenavControl}}</pre></p>
+    </fa-md-surface>
+</fa-md-app>

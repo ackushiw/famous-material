@@ -6,7 +6,8 @@ var angular = require('angular');
 require('angular-material');
 var app = angular.module(namespace, ['ngMaterial',
     // inject:modules start
-    require('./layouts')(namespace).name,
+    require('./demo')(namespace).name,
+        require('./layouts')(namespace).name,
         require('./material-components')(namespace).name
     // inject:modules end
 ]);

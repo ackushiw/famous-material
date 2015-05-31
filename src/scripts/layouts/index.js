@@ -15,16 +15,9 @@ module.exports = function(namespace) {
     // inject:folders start
     require('./constants')(app);
     require('./directives')(app);
+    require('./services')(app);
     // inject:folders end
 
-    app.config(['$stateProvider', '$urlRouterProvider',
-        function($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise('/');
-            $stateProvider.state('home', {
-                url: '/',
-                template: require('./views/home.html')
-            });
-        }
-    ]);
+    
     return app;
 };

@@ -1,0 +1,19 @@
+
+
+  <fa-view id="sidenav">
+    <fa-modifier fa-translate="[0,0,10]" fa-size="faMdSidenavCtrl.mainView.size.get()" fa-align="faMdSidenavCtrl.mainView.align.get()" fa-origin="faMdSidenavCtrl.mainView.align.get()">
+      <div ng-transclude>
+          This is directive : fa-md-sidenav
+      </div>
+
+  </fa-modifier>
+  </fa-view>
+
+<fa-modifier fa-translate="faMdSidenavCtrl.backdrop.translate.get()"
+fa-size="faMdSidenavCtrl.backdrop.size.get()" fa-opacity="faMdSidenavCtrl.backdrop.opacity.get()">
+  <fa-view id="sidenav-backdrop">
+    <fa-modifier fa-size="size" fa-opacity="opacity">
+      <fa-surface class="full-height"></fa-surface>
+    </fa-modifier>
+  </fa-view>
+</fa-modifier>
